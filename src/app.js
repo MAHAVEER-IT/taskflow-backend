@@ -45,7 +45,7 @@ app.get('/health', async (req, res) => {
     success: true,
     status: 'Server is running',
     rag: {
-      url: process.env.RAG_API_URL || 'http://localhost:8000',
+      url: process.env.RAG_API_URL || 'https://taskflow-rag.onrender.com',
       healthy: ragHealthy,
     },
     timestamp: new Date().toISOString(),
